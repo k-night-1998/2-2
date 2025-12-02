@@ -1,4 +1,3 @@
-/* Reset and general styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -8,42 +7,30 @@ body {
 
 /* Header & footer */
 header {
-  background-color: #7b5fa2; /* darker pastel purple */
+  background-color: #7b5fa2;
   color: #fff;
   padding: 20px;
   text-align: center;
 }
 
 footer {
-  background-color: #dcdcdc; /* soft gray */
+  background-color: #dcdcdc;
   padding: 15px;
   text-align: center;
-  margin-top: 20px;
 }
 
-/* Layout for content */
-#content-wrapper {
-  display: flex;
-  justify-content: center;
+/* Grid layout: two columns, three rows */
+#grid-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* main facts on left, sidebars on right */
+  grid-template-rows: repeat(3, auto);
   gap: 20px;
   padding: 20px;
 }
 
-/* Main content */
-main {
-  flex: 2;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 8px;
-  font-family: 'Audiowide', cursive;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-/* Facts inside main */
+/* Facts styling */
 .fact {
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
 }
 
@@ -51,11 +38,10 @@ main {
 .blue-fact { background-color: #e6e6ff; font-family: 'Audiowide', cursive; }
 .green-fact { background-color: #e6ffe6; font-family: 'Orbitron', sans-serif; }
 
-/* Sidebars */
+/* Sidebars styling */
 .sidebar {
-  flex: 1;
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 5px;
   font-weight: bold;
 }
 
@@ -63,7 +49,6 @@ main {
 .blue { background-color: #ddddff; }
 .green { background-color: #ddffdd; }
 
-/* Sidebar links */
 .sidebar a {
   color: #111;
   text-decoration: none;
@@ -73,10 +58,15 @@ main {
   text-decoration: underline;
 }
 
+/* Optional: style fact headings */
+.fact h4 {
+  margin-top: 0;
+}
+
 /* Quote styling */
 blockquote {
   font-style: italic;
   border-left: 4px solid #7b5fa2;
   padding-left: 10px;
-  margin: 0 0 20px 0;
+  margin-bottom: 10px;
 }
