@@ -1,12 +1,16 @@
-/* Import a retro/pixel font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* Load Zelda-style font */
+@font-face {
+  font-family: 'WildBreathZelda';
+  src: url('fonts/The-Wild-Breath-of-Zelda.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-/* General page styles */
 body {
   margin: 0;
-  font-family: 'Press Start 2P', cursive; /* video game vibe */
-  background-color: #ffffff; /* white background */
-  color: #111; /* dark text */
+  font-family: 'Press Start 2P', sans-serif; /* fallback for body text */
+  background-color: #ffffff;
+  color: #111;
 }
 
 #container {
@@ -15,26 +19,25 @@ body {
   min-height: 100vh;
 }
 
-/* Header and footer */
 header {
   text-align: center;
   padding: 15px;
-  background-color: #ffffff; /* white header */
+  background-color: #ffffff;
   color: #111;
-  font-weight: bold;
-  font-size: 1.5em;
+  font-family: 'WildBreathZelda', 'Press Start 2P', sans-serif;
+  font-size: 2em;
+  border-bottom: 1px solid #000;
 }
 
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #ffffff; 
-  color: #111; 
+  background-color: #ffffff;
+  color: #111;
   font-size: 0.9em;
   border-top: 1px solid #ccc;
 }
 
-/* Main layout */
 #content-wrapper {
   display: flex;
   flex: 1;
@@ -42,16 +45,15 @@ footer {
   padding: 10px;
 }
 
-/* Main content */
 main {
   flex: 2;
   padding: 10px;
-  background-color: #f9f9f9; /* light gray for contrast */
-  color: #111; 
+  background-color: #f9f9f9;
+  color: #111;
   border-radius: 5px;
+  font-family: 'Press Start 2P', sans-serif; /* readable body text */
 }
 
-/* Sidebar */
 #sidebar {
   flex: 1;
   display: flex;
@@ -59,40 +61,37 @@ main {
   gap: 10px;
 }
 
-/* Sidebar sections */
 .sidebar-section {
   padding: 10px;
   border-radius: 5px;
-  color: #111; /* dark text */
+  color: #111;
   font-weight: bold;
 }
 
-/* Softer pastel colors for sidebars */
-.red {
-  background-color: #ffcccc; /* soft red */
-}
+.red { background-color: #ffcccc; }
+.blue { background-color: #ccccff; }
+.green { background-color: #ccffcc; }
 
-.blue {
-  background-color: #ccccff; /* soft blue */
-}
-
-.green {
-  background-color: #ccffcc; /* soft green */
-}
-
-/* Lists inside sidebars */
 .sidebar-section ul {
   list-style-type: none;
   padding-left: 0;
   margin: 5px 0 0 0;
 }
 
-.sidebar-section li {
-  margin-bottom: 5px;
-  font-weight: normal;
+.sidebar-section li { margin-bottom: 5px; font-weight: normal; }
+
+/* Sidebar links clean styling */
+.sidebar-section a {
+  color: #111;
+  text-decoration: none;
 }
 
-/* Links in blockquote */
+.sidebar-section a:hover {
+  color: #555;
+  text-decoration: underline;
+}
+
+/* Blockquote links */
 blockquote a {
   color: #555;
   text-decoration: none;
