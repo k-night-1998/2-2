@@ -1,14 +1,6 @@
-/* Load Zelda-style font */
-@font-face {
-  font-family: 'WildBreathZelda';
-  src: url('fonts/The-Wild-Breath-of-Zelda.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   margin: 0;
-  font-family: 'Press Start 2P', sans-serif; /* fallback for body text */
+  font-family: 'Press Start 2P', sans-serif; /* retro look for body and sidebar */
   background-color: #ffffff;
   color: #111;
 }
@@ -24,7 +16,7 @@ header {
   padding: 15px;
   background-color: #ffffff;
   color: #111;
-  font-family: 'WildBreathZelda', 'Press Start 2P', sans-serif;
+  font-family: 'Audiowide', cursive; /* Zelda-style headings */
   font-size: 2em;
   border-bottom: 1px solid #000;
 }
@@ -48,10 +40,31 @@ footer {
 main {
   flex: 2;
   padding: 10px;
-  background-color: #f9f9f9;
+  background-color: rgba(249,249,249,0.9); /* fallback with transparency */
   color: #111;
   border-radius: 5px;
-  font-family: 'Press Start 2P', sans-serif; /* readable body text */
+  font-family: 'Press Start 2P', sans-serif;
+  
+  /* Background image */
+  background-image: url('https://cdn.pixabay.com/photo/2016/09/10/17/47/nintendo-1661503_1280.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: lighten; /* makes text easier to read */
+}
+
+blockquote {
+  font-style: italic;
+  color: #555;
+}
+
+blockquote a {
+  color: #555;
+  text-decoration: none;
+}
+
+blockquote a:hover {
+  text-decoration: underline;
 }
 
 #sidebar {
@@ -80,7 +93,6 @@ main {
 
 .sidebar-section li { margin-bottom: 5px; font-weight: normal; }
 
-/* Sidebar links clean styling */
 .sidebar-section a {
   color: #111;
   text-decoration: none;
@@ -88,15 +100,5 @@ main {
 
 .sidebar-section a:hover {
   color: #555;
-  text-decoration: underline;
-}
-
-/* Blockquote links */
-blockquote a {
-  color: #555;
-  text-decoration: none;
-}
-
-blockquote a:hover {
   text-decoration: underline;
 }
