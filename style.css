@@ -49,6 +49,11 @@ footer {
 .blue { background-color: #ddddff; }
 .green { background-color: #ddffdd; }
 
+/* Sidebar fonts matching facts */
+.red-font { font-family: 'Press Start 2P', monospace; }
+.blue-font { font-family: 'Audiowide', cursive; }
+.green-font { font-family: 'Orbitron', sans-serif; }
+
 .sidebar a {
   color: #111;
   text-decoration: none;
