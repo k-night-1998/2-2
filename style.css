@@ -1,7 +1,10 @@
+/* Import a retro/pixel font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 /* General page styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Press Start 2P', cursive; /* video game vibe */
   background-color: #ffffff; /* white background */
   color: #111; /* dark text */
 }
@@ -16,8 +19,8 @@ body {
 header {
   text-align: center;
   padding: 15px;
-  background-color: #ffff33; /* yellow */
-  color: #111; 
+  background-color: #ffffff; /* white header */
+  color: #111;
   font-weight: bold;
   font-size: 1.5em;
 }
@@ -60,21 +63,21 @@ main {
 .sidebar-section {
   padding: 10px;
   border-radius: 5px;
-  color: #111; /* dark text for readability on softer colors */
+  color: #111; /* dark text */
   font-weight: bold;
 }
 
-/* Softer colors */
+/* Softer pastel colors for sidebars */
 .red {
-  background-color: #ff9999; /* softer red */
+  background-color: #ffcccc; /* soft red */
 }
 
 .blue {
-  background-color: #9999ff; /* softer blue */
+  background-color: #ccccff; /* soft blue */
 }
 
 .green {
-  background-color: #99ff99; /* softer green */
+  background-color: #ccffcc; /* soft green */
 }
 
 /* Lists inside sidebars */
@@ -87,4 +90,14 @@ main {
 .sidebar-section li {
   margin-bottom: 5px;
   font-weight: normal;
+}
+
+/* Links in blockquote */
+blockquote a {
+  color: #555;
+  text-decoration: none;
+}
+
+blockquote a:hover {
+  text-decoration: underline;
 }
