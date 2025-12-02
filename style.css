@@ -7,7 +7,7 @@ body {
 
 /* Header & footer */
 header {
-  background-color: #9b59b6; /* vibrant pastel purple */
+  background-color: #ff6666; /* swapped to red */
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -40,9 +40,10 @@ footer {
   min-height: 120px;
 }
 
-.red-fact { background-color: #ffcccc; font-family: 'Press Start 2P', monospace; }
-.blue-fact { background-color: #cce0ff; font-family: 'Audiowide', cursive; }
-.green-fact { background-color: #ccffcc; font-family: 'Orbitron', sans-serif; }
+/* Background colors and fonts for facts */
+.purple-fact { background-color: #d1b3ff; font-family: 'Press Start 2P', monospace; font-size: 0.9rem; }
+.blue-fact { background-color: #cce0ff; font-family: 'Audiowide', cursive; font-size: 1.1rem; } /* increased */
+.green-fact { background-color: #ccffcc; font-family: 'Orbitron', sans-serif; font-size: 1.1rem; } /* increased */
 
 /* Sidebars styling */
 .sidebar {
@@ -51,12 +52,12 @@ footer {
   font-weight: bold;
 }
 
-.red { background-color: #ff9999; }
+/* Sidebar colors and fonts */
+.purple { background-color: #9b59b6; }
 .blue { background-color: #99ccff; }
 .green { background-color: #99ff99; }
 
-/* Sidebar fonts matching facts */
-.red-font { font-family: 'Press Start 2P', monospace; }
+.purple-font { font-family: 'Press Start 2P', monospace; }
 .blue-font { font-family: 'Audiowide', cursive; }
 .green-font { font-family: 'Orbitron', sans-serif; }
 
@@ -69,14 +70,14 @@ footer {
   text-decoration: underline;
 }
 
-/* Optional: style fact headings */
+/* Fact headings */
 .fact h4 {
   margin-top: 0;
 }
 
 /* Quote styling */
 .quote-box {
-  background-color: #9b59b6; /* match header */
+  background-color: #ff6666; /* match header */
   padding: 15px;
   margin: 20px;
   border-radius: 8px;
