@@ -4,7 +4,7 @@
 body {
   margin: 0;
   font-family: 'Audiowide', cursive; /* main body same as header */
-  background-color: #ffffff;
+  background-color: #f4f4f4; /* softer than pure white */
   color: #111;
 }
 
@@ -19,7 +19,7 @@ header {
   padding: 15px;
   background-color: #ffffff;
   color: #111;
-  font-family: 'Audiowide', cursive; 
+  font-family: 'Audiowide', cursive;
   font-size: 2em;
   border-bottom: 1px solid #000;
 }
@@ -43,17 +43,10 @@ footer {
 main {
   flex: 2;
   padding: 10px;
-  background-color: rgba(249,249,249,0.9);
+  background-color: #e9e9e9; /* soft gray for easy reading */
   color: #111;
   border-radius: 5px;
   font-family: 'Audiowide', cursive;
-
-  /* Nintendo background image */
-  background-image: url('https://cdn.pixabay.com/photo/2016/09/10/17/47/nintendo-1661503_1280.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-blend-mode: lighten;
 }
 
 blockquote {
@@ -95,9 +88,9 @@ blockquote a:hover {
   font-weight: bold;
 }
 
-.red { background-color: #ffcccc; }
-.blue { background-color: #ccccff; }
-.green { background-color: #ccffcc; }
+.red { background-color: #ffdddd; }
+.blue { background-color: #ddddff; }
+.green { background-color: #ddffdd; }
 
 .sidebar-section ul {
   list-style-type: none;
