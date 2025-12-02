@@ -7,7 +7,7 @@ body {
 
 /* Header & footer */
 header {
-  background-color: #b699d9; /* pastel purple */
+  background-color: #9b59b6; /* more vibrant pastel purple */
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -34,9 +34,9 @@ footer {
   border-radius: 5px;
 }
 
-.red-fact { background-color: #ffe6e6; font-family: 'Press Start 2P', monospace; }
-.blue-fact { background-color: #e6e6ff; font-family: 'Audiowide', cursive; }
-.green-fact { background-color: #e6ffe6; font-family: 'Orbitron', sans-serif; }
+.red-fact { background-color: #ffcccc; font-family: 'Press Start 2P', monospace; }
+.blue-fact { background-color: #cce0ff; font-family: 'Audiowide', cursive; }
+.green-fact { background-color: #ccffcc; font-family: 'Orbitron', sans-serif; }
 
 /* Sidebars styling */
 .sidebar {
@@ -45,9 +45,9 @@ footer {
   font-weight: bold;
 }
 
-.red { background-color: #ffdddd; }
-.blue { background-color: #ddddff; }
-.green { background-color: #ddffdd; }
+.red { background-color: #ff9999; }
+.blue { background-color: #99ccff; }
+.green { background-color: #99ff99; }
 
 /* Sidebar fonts matching facts */
 .red-font { font-family: 'Press Start 2P', monospace; }
@@ -70,7 +70,7 @@ footer {
 
 /* Quote styling */
 .quote-box {
-  background-color: #b699d9; /* pastel purple */
+  background-color: #9b59b6; /* match updated header */
   padding: 15px;
   margin: 20px;
   border-radius: 8px;
