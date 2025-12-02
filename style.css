@@ -1,3 +1,6 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron&family=Press+Start+2P&display=swap');
+
 body {
   margin: 0;
   font-family: 'Audiowide', cursive;
@@ -14,7 +17,7 @@ body {
 header {
   text-align: center;
   padding: 15px;
-  background-color: #dceeff; /* soft pastel blue */
+  background-color: #d1c4e9; /* darker pastel purple */
   color: #111;
   font-family: 'Audiowide', cursive;
   font-size: 2em;
@@ -40,7 +43,7 @@ footer {
 main {
   flex: 2;
   padding: 10px;
-  background-color: #ffffff; /* white main body */
+  background-color: #ffffff;
   color: #111;
   border-radius: 5px;
   font-family: 'Audiowide', cursive;
@@ -58,6 +61,24 @@ blockquote a {
 
 blockquote a:hover {
   text-decoration: underline;
+}
+
+.fact {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  color: #111;
+  font-family: 'Audiowide', cursive;
+}
+
+.red-fact { background-color: #ffe6e6; }
+.blue-fact { background-color: #e6e6ff; }
+.green-fact { background-color: #e6ffe6; }
+
+.fact h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1.1em;
 }
 
 #sidebar {
