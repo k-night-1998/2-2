@@ -7,14 +7,14 @@ body {
 
 /* Header & footer */
 header {
-  background-color: #7b5fa2;
+  background-color: #7b5fa2; /* darker pastel purple */
   color: #fff;
   padding: 20px;
   text-align: center;
 }
 
 footer {
-  background-color: #dcdcdc;
+  background-color: #dcdcdc; /* soft gray */
   padding: 15px;
   text-align: center;
 }
@@ -68,5 +68,5 @@ blockquote {
   font-style: italic;
   border-left: 4px solid #7b5fa2;
   padding-left: 10px;
-  margin-bottom: 10px;
+  margin: 20px;
 }
