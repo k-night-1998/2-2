@@ -1,0 +1,90 @@
+/* General page styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* white background */
+  color: #111; /* dark text */
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header and footer */
+header {
+  text-align: center;
+  padding: 15px;
+  background-color: #ffff33; /* yellow */
+  color: #111; 
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffff; 
+  color: #111; 
+  font-size: 0.9em;
+  border-top: 1px solid #ccc;
+}
+
+/* Main layout */
+#content-wrapper {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Main content */
+main {
+  flex: 2;
+  padding: 10px;
+  background-color: #f9f9f9; /* light gray for contrast */
+  color: #111; 
+  border-radius: 5px;
+}
+
+/* Sidebar */
+#sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Sidebar sections */
+.sidebar-section {
+  padding: 10px;
+  border-radius: 5px;
+  color: #111; /* dark text for readability on softer colors */
+  font-weight: bold;
+}
+
+/* Softer colors */
+.red {
+  background-color: #ff9999; /* softer red */
+}
+
+.blue {
+  background-color: #9999ff; /* softer blue */
+}
+
+.green {
+  background-color: #99ff99; /* softer green */
+}
+
+/* Lists inside sidebars */
+.sidebar-section ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 5px 0 0 0;
+}
+
+.sidebar-section li {
+  margin-bottom: 5px;
+  font-weight: normal;
+}
