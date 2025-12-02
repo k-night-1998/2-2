@@ -7,14 +7,14 @@ body {
 
 /* Header & footer */
 header {
-  background-color: #7b5fa2; /* darker pastel purple */
+  background-color: #b699d9; /* pastel purple */
   color: #fff;
   padding: 20px;
   text-align: center;
 }
 
 footer {
-  background-color: #dcdcdc; /* soft gray */
+  background-color: #dcdcdc;
   padding: 15px;
   text-align: center;
 }
@@ -64,9 +64,20 @@ footer {
 }
 
 /* Quote styling */
+.quote-box {
+  background-color: #b699d9; /* pastel purple */
+  padding: 15px;
+  margin: 20px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
 blockquote {
   font-style: italic;
-  border-left: 4px solid #7b5fa2;
-  padding-left: 10px;
-  margin: 20px;
+  margin: 0;
+}
+
+.quote-box a {
+  color: #fff;
+  text-decoration: underline;
 }
